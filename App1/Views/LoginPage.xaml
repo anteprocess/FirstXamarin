@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.LoginPage">
+    <StackLayout x:Name="MasterLayout">
+        <!-- xaml designer might not always show your bindings so it's a good idea to use FallbackValue -->
+        <!--<Label Text="{Binding Text, Source={x:Reference this}, FallbackValue='(empty)'}" />-->
+        <StackLayout x:Name="LogoStack" VerticalOptions="FillAndExpand">
+            <Image x:Name="LoginImage" Source="andy.png" Margin="0, 80, 0, 0"/>
+        </StackLayout>
+
+        <StackLayout x:Name="LoginEntries" VerticalOptions="StartAndExpand">
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness" Phone="40,0,40,0" Tablet="140,150,140,0"/>
+            </StackLayout.Padding>
+
+            <ActivityIndicator x:Name=" ActivitySpinner" Color="Red" IsRunning="true" />
+            <!-- give the bindings or the variable names for more control ?-->
+            <Label  x:Name="Lbl_Username" Text="username"/>
+            <Entry x:Name="Entry_Username" Placeholder="Username" />
+            <Label x:Name="Lbl_Password" Text="Password"/>
+            <Entry x:Name="Entry_Password"  Placeholder="Password" />
+            <Button  x:Name="Btn_Signin" Text="Sign In"  Clicked="Btn_Signin_Clicked"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
