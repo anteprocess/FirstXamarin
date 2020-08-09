@@ -24,7 +24,9 @@ namespace App1.Views
             BackgroundColor = Constants.BackgroundColor;
             Lbl_Username.TextColor = Constants.MainTextColor;
             Lbl_Password.TextColor = Constants.MainTextColor;
-            ActivitySpinner.IsVisible = false;
+           
+           ActivitySpinner.IsVisible = false;
+            
             LoginImage.HeightRequest = Constants.loginIconHeight;
 
             // this is the lambda 

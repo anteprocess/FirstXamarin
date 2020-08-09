@@ -14,7 +14,7 @@
                 <OnIdiom x:TypeArguments="Thickness" Phone="40,0,40,0" Tablet="140,150,140,0"/>
             </StackLayout.Padding>
 
-            <ActivityIndicator x:Name=" ActivitySpinner" Color="Red" IsRunning="true" />
+            <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="true" />
             <!-- give the bindings or the variable names for more control ?-->
             <Label  x:Name="Lbl_Username" Text="username"/>
             <Entry x:Name="Entry_Username" Placeholder="Username" />
